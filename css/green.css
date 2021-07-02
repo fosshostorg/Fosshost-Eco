@@ -74,6 +74,11 @@ nav.navbar.fixed-top.navbar-expand-lg.navbar-light.bg-light.box-shadow div.conta
     animation: filling 7s ease-in-out infinite;
 }
 
+.fosshost-text.content-outer {
+    perspective: 2px;
+    -webkit-perspective: 2px;
+}
+
 /* Sponsors Footer */
 .sponsorsFooter {
     width: 100%;
@@ -209,3 +214,85 @@ img.fader {
     filter: sepia(0);
 }
 
+.fosshost-eco, .eco-logo {
+    display: none !important;
+}
+
+/*@media not all and (min-resolution:.001dpcm) {*/
+/*    @supports (-webkit-appearance:none) {*/
+/*        .fosshost-text {*/
+/*            display: none !important;*/
+/*        }*/
+
+/*        .fosshost-eco, .eco-logo {*/
+/*            display: inline !important;*/
+/*        }*/
+
+/*        .fosshost-eco .eco-logo {*/
+/*            width: 250px;*/
+/*            max-width: 80%;*/
+/*            margin-top: 70px;*/
+/*            margin-bottom: 20px;*/
+/*        }*/
+/*    }*/
+/*}*/
+
+/* Safari 11+ */
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+    .fosshost-text {
+        display: none !important;
+    }
+
+    .fosshost-eco, .eco-logo {
+        display: inline !important;
+    }
+
+    .fosshost-eco .eco-logo {
+        min-width: 250px;
+        width: 450px;
+        max-width: 80%;
+        margin-top: 70px;
+        margin-bottom: 20px;
+    }
+}}
+
+/* Safari 10.1 */
+@media not all and (min-resolution:.001dpcm){
+    @supports (-webkit-appearance:none) and (not (stroke-color:transparent)) {
+        .fosshost-text {
+            display: none !important;
+        }
+
+        .fosshost-eco, .eco-logo {
+            display: inline !important;
+        }
+
+        .fosshost-eco .eco-logo {
+            min-width: 250px;
+            width: 450px;
+            max-width: 80%;
+            margin-top: 70px;
+            margin-bottom: 20px;
+        }
+    }}
+
+/* Safari 6.1-10.0 (but not 10.1) */
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0){
+    @media {
+        .fosshost-text {
+            display: none !important;
+        }
+
+        .fosshost-eco, .eco-logo {
+            display: inline !important;
+        }
+
+        .fosshost-eco .eco-logo {
+            min-width: 250px;
+            width: 450px;
+            max-width: 80%;
+            margin-top: 70px;
+            margin-bottom: 20px;
+        }
+    }}

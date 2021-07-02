@@ -5,7 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Fosshost ECO - Sponsors</title>
-    <meta name="description" content="Fosshost goes Green!"/>
+    <meta name="description" content="Reducing the CO2 footprint together! We will plant a tree for each application">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://eco.fossho.st/">
+    <meta property="og:title" content="Fosshost ECO">
+    <meta property="og:description" content="Reducing the CO2 footprint together! We will plant a tree for each application">
+    <meta property="og:image" content="https://eco.fossho.st/img/og-meta.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://eco.fossho.st/">
+    <meta property="twitter:title" content="Fosshost ECO">
+    <meta property="twitter:description" content="Reducing the CO2 footprint together! We will plant a tree for each application">
+    <meta property="twitter:image" content="https://eco.fossho.st/img/og-meta.png">
+
     <link href="css/font/sourcesanspro.css" rel="stylesheet" type="text/css"/>
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
     <link href="css/green.css" rel="stylesheet" type="text/css">
@@ -31,7 +46,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/stats.html">Stats</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item ms-2">
                         <a href="https://fosshost.org/apply" class="nav-link btn btn-warning">❤️ Plant a tree!</a>
                     </li>
                 </ul>
@@ -43,6 +58,9 @@
         <div class="fosshost-text">
             <h1 class="display-1 mt-5 fw-bold">Fosshost ECO</h1>
         </div>
+        <div class="fosshost-eco mt-5">
+            <img src="img/fosshost-eco.png" class="eco-logo">
+        </div>
         <div class="cl sepia">
             <img class="cl sepia" src="img/forest-2.png" alt="Forest drawing" height="164"/>
         </div>
@@ -52,17 +70,6 @@
         <div class="col-sm-12 col-md-8 offset-md-2 mb-md-3">
             <h1 class="fs-1">Core Sponsors</h1>
             <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
-                <div class="col">
-                    <div class="card border-0 h-100">
-                        <a href="https://fdcservers.net" target="_blank" class="stretched-link" data-bs-toggle="tooltip" data-bs-html="true"
-                           title="FDCServers have been operating in business since 2001. They were one of the very first providers to offer unmetered and dedicated connectivity solutions. They operate a 25+ Tbps backbone and host more than 5000 dedicated servers. FDCServers is a very good option for projects who may be located in Asia, the Pacific, and Oceania because of their strong connectivity links.">
-                            <img src="img/sponsors/fdc.svg" class="card-img-top img-fluid h-100 filter-green" alt="FDC">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title"></h5>
-                        </div>
-                    </div>
-                </div>
                 <div class="col">
                     <div class="card border-0 h-100">
                         <a href="https://metal.equinix.com" target="_blank" class="stretched-link" data-bs-toggle="tooltip" data-bs-html="true"
@@ -76,9 +83,9 @@
                 </div>
                 <div class="col">
                     <div class="card border-0 h-100">
-                        <a href="https://osuosl.org" target="_blank" class="stretched-link" data-bs-toggle="tooltip" data-bs-html="true"
-                           title="The lab, in partnership with the School of Electrical Engineering and Computer Science at Oregon State University, provides hosting for more than 160 projects, including those of worldwide leaders like the Apache Software Foundation, the Linux Foundation, and Drupal. Together, the OSL’s hosted sites deliver nearly 430 terabytes of information to people around the world every month. The most active organization of its kind, the OSL offers world-class hosting services, professional software development, and on-the-ground training for promising students interested in open source management and programming. OSUOSL provides a node to the project.">
-                            <img src="img/sponsors/osu.png" class="card-img-top img-fluid filter-green" alt="...">
+                        <a href="https://fdcservers.net" target="_blank" class="stretched-link" data-bs-toggle="tooltip" data-bs-html="true"
+                           title="FDCServers have been operating in business since 2001. They were one of the very first providers to offer unmetered and dedicated connectivity solutions. They operate a 25+ Tbps backbone and host more than 5000 dedicated servers. FDCServers is a very good option for projects who may be located in Asia, the Pacific, and Oceania because of their strong connectivity links.">
+                            <img src="img/sponsors/fdc.svg" class="card-img-top img-fluid h-100 filter-green" alt="FDC">
                         </a>
                         <div class="card-body">
                             <h5 class="card-title"></h5>
@@ -90,6 +97,27 @@
                         <a href="https://rapidswitch.com" target="_blank" class="stretched-link" data-bs-toggle="tooltip" data-bs-html="true"
                            title="RapidSwitch is owned by iomart group PLC who is a £100m+ Scottish-based cloud technology provider listed on the UK Stock Exchange in 2000. iomart has acquired several successful cloud hosting companies during its 20-year trading history, and today provides services to the open-source community, including Fosshost.  ">
                             <img src="img/sponsors/rapidswitch.png" class="card-img-top img-fluid filter-green" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 h-100">
+                        <a href="https://digitalocean.com" target="_blank" class="stretched-link" data-bs-toggle="tooltip" data-bs-html="true"
+                           title="DigitalOcean is a leading developer cloud hosting provider who offers droplets, Kubernetes, and various 1-click deployments from several regions across the globe. The Fosshost project has an agreement with DigitalOcean which allows us to utilize their infrastructure to deliver services in regions where we do not have a local presence.">
+                            <img src="img/sponsors/digitalocean.svg" class="card-img-top img-fluid filter-green" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 h-100">
+                        <a href="https://fastly.net" target="_blank" class="stretched-link" data-bs-toggle="tooltip" data-bs-html="true" title="Fastly's content delivery network is all about control and reliability: deliver faster sites and apps, broadcast videos in the highest quality, and get real-time visibility — all in an agile, API-first platform.">
+                            <img src="img/sponsors/fastly.svg" class="card-img-top img-fluid filter-green" alt="...">
                         </a>
                         <div class="card-body">
                             <h5 class="card-title"></h5>
@@ -131,19 +159,9 @@
                 </div>
                 <div class="col">
                     <div class="card border-0 h-100">
-                        <a href="https://digitalocean.com" target="_blank" class="stretched-link" data-bs-toggle="tooltip" data-bs-html="true"
-                           title="DigitalOcean is a leading developer cloud hosting provider who offers droplets, Kubernetes, and various 1-click deployments from several regions across the globe. The Fosshost project has an agreement with DigitalOcean which allows us to utilize their infrastructure to deliver services in regions where we do not have a local presence.">
-                            <img src="img/sponsors/digitalocean.svg" class="card-img-top img-fluid filter-green" alt="...">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title"></h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card border-0 h-100">
-                        <a href="https://fastly.net" target="_blank" class="stretched-link" data-bs-toggle="tooltip" data-bs-html="true" title="Fastly's content delivery network is all about control and reliability: deliver faster sites and apps, broadcast videos in the highest quality, and get real-time visibility — all in an agile, API-first platform.">
-                            <img src="img/sponsors/fastly.svg" class="card-img-top img-fluid filter-green" alt="...">
+                        <a href="https://osuosl.org" target="_blank" class="stretched-link" data-bs-toggle="tooltip" data-bs-html="true"
+                           title="The lab, in partnership with the School of Electrical Engineering and Computer Science at Oregon State University, provides hosting for more than 160 projects, including those of worldwide leaders like the Apache Software Foundation, the Linux Foundation, and Drupal. Together, the OSL’s hosted sites deliver nearly 430 terabytes of information to people around the world every month. The most active organization of its kind, the OSL offers world-class hosting services, professional software development, and on-the-ground training for promising students interested in open source management and programming. OSUOSL provides a node to the project.">
+                            <img src="img/sponsors/osu.png" class="card-img-top img-fluid filter-green" alt="...">
                         </a>
                         <div class="card-body">
                             <h5 class="card-title"></h5>
@@ -152,20 +170,21 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-12 col-md-8 offset-md-2 mt-md-5">
-            <h1 class="fs-3">
-                🔗 <a href="https://docs.fosshost.org/en/home/hosting-sponsors" rel="noopener" target="_blank">Principal Sponsors</a>
-            </h1>
-        </div>
-        <div class="planet rounded-bottom bg-transparent">&nbsp;</div>
     </div>
+    <div class="col-sm-12 col-md-8 offset-md-2 mt-md-5">
+        <h1 class="fs-3">
+            🔗 <a href="https://docs.fosshost.org/en/home/hosting-sponsors" rel="noopener" target="_blank">Learn more about our sponsors here</a>
+        </h1>
+    </div>
+    <div class="planet rounded-bottom bg-transparent">&nbsp;</div>
 </div>
 
+<div class="col-md-12 text-center">
+    <a href=""><img src="/img/thg/Member%20Logo%20-%20Horizontal%20-%20Black.png" alt="THG Member" class="img-fluid" style="width: 150px; height: auto;"></a>
+</div>
 <footer>
     <p class="mt-5 small text-center text-muted">
-        <a href="https://fosshost.org" target="_blank">Fosshost</a> C.I.C LBG (without share capital) is registered in England and Wales.<br/>
-        <a href="https://find-and-update.company-information.service.gov.uk/company/13356530" target="_blank">Company Registration Number: 13356530.</a><br/>
-        All rights reserved © 2021
+        <a href="https://fosshost.org" target="_blank">Fosshost</a> is a nonprofit company and is registered in England and Wales. Company Registration Number: 13356530. All rights reserved © 2021
     </p>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
