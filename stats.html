@@ -91,7 +91,7 @@
                             <div class="col-md-8">
                                 <div class="card-body">
                                     <h5 class="card-title">On Premise and Physical Dedicated / Colocated Servers</h5>
-                                    <p class="card-text fs-1">50.3t <span class="fs-4 text-muted">CO2</span></p>
+                                    <p class="card-text fs-1"><span class="counter-count">50</span>.<span class="counter-count">3</span><span class="fs-4 text-muted">t CO2</span></p>
                                 </div>
                             </div>
                         </div>
@@ -106,7 +106,7 @@
                             <div class="col-md-8">
                                 <div class="card-body">
                                     <h5 class="card-title">Virtual Cloud servers and services which are not directly operated by Fosshost</h5>
-                                    <p class="card-text fs-1">6.8t <span class="fs-4 text-muted">CO2</span></p>
+                                    <p class="card-text fs-1"><span class="counter-count">6</span>.<span class="counter-count">8</span><span class="fs-4 text-muted">t CO2</span></p>
                                 </div>
                             </div>
                         </div>
@@ -115,31 +115,31 @@
             </div>
 
             <div class="row offset-md-2">
-                <div class="col-md-5">
-                    <div class="card mb-3 shadow-lg" style="max-width: 540px;">
+                <div class="col-md-10">
+                    <div class="card mb-3 shadow-lg">
                         <div class="row g-0">
                             <div class="col-md-4 my-auto">
-                                <i class="fa fa-tree fa-3x text-success m-3" aria-hidden="true"></i>
+                                <img alt="Trees Planted" class="img-fluid m-3" src="img/plant-a-tree.svg" style="width: 40%">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h5 class="card-title">Trees Planted</h5>
-                                    <p class="card-text">50</p>
+                                    <h5 class="card-title">Trees planted so far</h5>
+                                    <p class="card-text fs-1"><span class="counter-count">50</span><i class="fa fa-tree fa-fw text-success"></i></p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5">
-                    <div class="card mb-3 shadow-lg" style="max-width: 540px;">
+                <div class="col-md-10">
+                    <div class="card mb-3 shadow-lg">
                         <div class="row g-0">
                             <div class="col-md-4 my-auto">
-                                <i class="fa fa-group fa-3x text-success m-3" aria-hidden="true"></i>
+                                <img alt="Goal" class="img-fluid m-3" src="img/forest-2.png" style="width: 40%">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h5 class="card-title">Goal</h5>
-                                    <p class="card-text">Match &numero; of Tenants</p>
+                                    <h5 class="card-title">Our goal is to plant as many trees as we have approved applications</h5>
+                                    <p class="card-text fs-1 counter-count">125</p>
                                 </div>
                             </div>
                         </div>
@@ -159,5 +159,24 @@
     </p>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $('.counter-count').each(function () {
+        $(this).prop('Counter', 0).animate({
+            Counter: $(this).text()
+        }, {
+
+            //chnage count up speed here
+            duration: 4000,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
+    });
+</script>
 </body>
 </html>
